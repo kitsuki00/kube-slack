@@ -114,6 +114,7 @@ Additionally, the following environment variables can be used:
 - `SLACK_CHANNEL`: Override channel to send
 - `SLACK_USERNAME`: Override username to send
 - `SLACK_PROXY`: URL of HTTP proxy used to connect to Slack
+- `SLACK_MENTION`: Add a Mention to the message to be sent
 - `RECOVERY_ALERT`: Set to `false` to disable alert on pod recovery
 
 ## Annotations

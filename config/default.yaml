@@ -30,3 +30,5 @@ metrics_requests: false # Alert if pods are above requests resources (no limits 
 slack_channel: null
 # slack_username: null
 # slack_proxy: null
+# slack_mention: null
+

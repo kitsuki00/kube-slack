@@ -28,11 +28,14 @@ export default class SlackNotifier {
 
 		let channel = item.channel || config.get('slack_channel');
 		let username = item.username || config.get('slack_username');
+		let mention = config.get('slack_mention')
+		mention = mention? mention + ' \n' : ''
+
 		delete item.channel;
 
 		return this.slack
 			.send({
-				text: item.text || 'Kubernetes Notification:',
+				text: mention + item.text || 'Kubernetes Notification:',
 				attachments: [item],
 				channel,
 				username
